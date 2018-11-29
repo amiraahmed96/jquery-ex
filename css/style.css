@@ -1,0 +1,147 @@
+/* start navbar*/
+*
+{
+   padding: 0px;
+   margin: 0px; 
+}
+.navbar
+{
+    list-style: none;
+    padding: 5px;
+    margin: 0px;
+    background-color: rgba(0,0,0,0.7);
+    display: inline-block;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    text-align: center;
+}
+.navbar li a.active
+{
+    color: yellow;
+}
+.navbar li
+{
+    display: inline-block;
+    padding: 20px;
+}
+.navbar li a
+{
+    color: #EEE;
+    text-decoration: none;
+}
+/* end navbar*/
+
+.block
+{
+    clear: both;
+    height: 1200px;
+    background-color: #EEE;
+    margin-bottom: 20px;
+    padding: 60px 0px;
+    text-align: center
+}
+.top
+{
+    background-color: #333;
+    color: white;
+    display: inline-block;
+    padding: 2px 5px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+}
+.show-popup
+{
+    padding:5px 10px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: block;
+    margin: 20px;
+}
+
+/* start popup*/
+.popup
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+.popup .inner
+{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    height: 250;
+    left: 50%;
+    position: fixed;
+    margin-left: -150px;
+    top: 50%;
+    margin-top: -125px;
+    border-radius: 10px;
+}
+.popup .inner .close
+{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding:5px 10px;
+    border-radius: 4px;
+    background-color: #EEE;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.popup .inner hr
+{
+    background-color: #EEE;
+    margin-top: 10px;
+}
+/*end popup*/
+.button1
+{
+    display: block;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 140px; 
+    font-weight: bold;
+    margin-left: 10px;
+    background-color: black;
+}
+.buttons-effects .button1 span:first-child
+{
+    display: block;
+    background-color: yellow;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0%;
+    border: 0px;
+    z-index: 1;
+}
+.buttons-effects .button1 span:last-child
+{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    padding-top: 6px;
+    border: 0px;
+    z-index: 2;
+}
